@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- ---------------- FAVICON ------------------ -->
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!--Font Aswesome-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!--Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <title>Quick Learner</title>
+  <style>
+    .img-sz {
+      width: 10rem;
+      height: 8rem;
+    }
+
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #6f42c1;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body id="resource">
+  <!--Navbar Section -->
+
+  <nav class="nav p-3">
+
+    <a href="#" id="logo" class="navbar-brand  font-weight-bold">
+      Quick Learn
+    </a>
+    <a class="nav-link btn" href="./index.html" id="navResourceBtn">Home</a>
+    <span class="btn" onclick="dark_mode()" style="display: block; margin-left: 2px; color: #6940d3;" href="#"><i
+        id="darkSwitch2" class="fas fa-moon"></i></span>
+  </nav>
+  <div class="container-fluid my-3" id="resourceContainer">
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 m-3 mx-4">
+      <h4 id="categoryText">Categories</h4>
+      <hr class="catHr" />
+      <ul id="categoryList" class="nav nav-pills flex-column mb-auto">
+        <li>
+          <button class="link-dark contribution-btn" id="contributeBtn">Team Details</button>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Programming</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="programming">
+              C++
+            </button>
+            <button class="btn select-category-btn shadow-none" value="programming">
+              Java
+            </button>
+            <button class="btn select-category-btn shadow-none" value="programming">
+              Python
+            </button>
+            <button class="btn select-category-btn shadow-none" value="programming">
+              Javascript
+            </button>
+            <button class="btn select-category-btn" value="programming">
+              PHP
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Web Development</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="web">
+              Frontend
+            </button>
+            <button class="btn select-category-btn shadow-none" value="web">
+              Backend
+            </button>
+            <button class="btn select-category-btn shadow-none" value="web">
+              MEAN
+            </button>
+            <button class="btn select-category-btn shadow-none" value="web">
+              MERN
+            </button>
+            <button class="btn select-category-btn shadow-none" value="web">
+              MEVN
+            </button>
+            <button class="btn select-category-btn" value="web">
+              Ruby on Rails
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style ">Mobile Development</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="android">
+              Android
+            </button>
+            <button class="btn select-category-btn shadow-none" value="android">
+              Flutter
+            </button>
+            <button class="btn select-category-btn shadow-none" value="android">
+              IOS
+            </button>
+            <button class="btn select-category-btn shadow-none" value="android">
+              React Native
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Application Programming Interface</button>
+          <div class="select-option">
+            <button class="btn select-category-btn" value="api">
+              API
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Designing</button>
+
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="design">
+              General
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              Illustrations
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              Motion
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              Photo
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              Sound
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              UI/UX
+            </button>
+            <button class="btn select-category-btn shadow-none" value="design">
+              Video
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">
+            Artificial Intelligience
+          </button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="ai">AI</button>
+            <button class="btn select-category-btn shadow-none" value="ai">ML</button>
+            <button class="btn select-category-btn shadow-none" value="ai">
+              Computer Vision
+            </button>
+            <button class="btn select-category-btn shadow-none" value="ai">
+              Deep Learning
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Data Science</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="data_science">
+              Statistics
+            </button>
+            <button class="btn select-category-btn shadow-none" value="data_science">
+              Big Data
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Git and GitHub</button>
+          <div class="select-option">
+            <button class="btn select-category-btn" value="git">
+              Git and GitHub
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Data Structures & Algorithms</button>
+          <div class="select-option">
+            <button class="btn select-category-btn" value="data_structure_&_algorithm">
+              Data structures & Algorithms
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Database Management</button>
+          <div class="select-option">
+            <button class="btn select-category-btn" value="database_management">
+              Database Management
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Blockchain Development</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="Blockchain">
+              Blockchain
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Ethical Hacking</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="ethical_hacking">
+              Ethical Hacking
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Game Development</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="Game_dev">
+              Game Development
+            </button>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Robotics</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="robotics">
+              Robotics
+            </button>
+          </div>
+        </li>
+
+        <li class="category">
+          <button class="link-dark btn-style">Linux Fundamentals</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="linux">
+              linux
+            </button>
+          </div>
+        </li>
+
+        <li class="category">
+          <button class="link-dark btn-style">CyberSecurity</button>
+          <div class="select-option">
+            <button class="btn select-category-btn shadow-none" value="CyberSecurity">
+              CyberSecurity
+            </button>
+          </div>
+        </li>
+      </ul>
+      <hr class="catHr" />
+    </div>
+    <!-- Sidebar Ends -->
+    <div class="container mt-3" id="contributionGuideline">
+      <h2 id="contriHead">Team</h2>
+
+      <div class="contributionHead font my-2">
+      </div>
+
+
+
+      <div class="code">
+        <div class="mx-4 my-2 fc" id="1">
+          <div class=""></div>
+          <div class="">Abhishek Singh</div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="code">
+        <div class="mx-4 my-2 fc" id="2">Akshat Singh</div>
+      </div>
+      <BR>
+
+      <div class="code">
+        <div class="mx-4 my-2 fc" id="3">Arun Raghav</div>
+      </div>
+      <br>
+
+      <div class="code">
+        <div class="mx-4 my-2 fc" id="2">Kunal Vats</div>
+      </div>
+      <br>
+
+      </ol>
+    </div>
+    <div class="container mt-3" id="resourceBox">
+      <!--Beginner Resource Box-->
+      <h4 class="resource-heading">Beginner</h4>
+      <div class="row" id="beginnerResourceBox"></div>
+      <!--Intermediate Resource Box -->
+      <h4 class="resource-heading">Intermediate</h4>
+      <div class="row mt-2" id="intermediateResourceBox"></div>
+      <!--Advanced Resource Box -->
+      <h4 class="resource-heading">Advanced</h4>
+      <div class="row mt-2" id="advancedResourceBox"></div>
+      <h4 class="resource-heading"></h4>
+      <div class="row mt-2" id="projectsResourceBox"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer d-flex flex-coloumn justify-content-center p-1">
+      Made with ❤ By <a href=""> ABHISHEK </a>
+      <a href="https://github.com/dsc-jss-noida" classname=" text-black github-footer" rel="noopener noreferrer"
+        target="_blank">
+      </a>
+    </div>
+
+  </footer>
+  <!-- Footer Section Ends -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/getResource.js"></script>
+  <script src="https://kit.fontawesome.com/d5f8b6c1a9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

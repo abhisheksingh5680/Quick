@@ -1,0 +1,16 @@
+<svg width="873" height="1167" viewBox="0 0 873 1167" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="294" width="873" height="873">
+<circle cx="436.5" cy="730.5" r="436.5" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="436.5" cy="730.5" r="436.5" fill="#F1ADAF"/>
+<rect x="73" width="800" height="1154.26" fill="url(#pattern0)"/>
+</g>
+<rect x="73" width="800" height="1031" fill="url(#pattern1)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(-0.000903476) scale(0.00140901 0.000976562)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(-0.000903476) scale(0.00140901 0.00109332)"/>
+</pattern>
